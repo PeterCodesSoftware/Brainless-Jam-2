@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Item" format=3 uid="uid://dg3vao8knk84u"]
+
+[ext_resource type="Script" uid="uid://c6sos7llv4wlj" path="res://item/item.gd" id="1_ffeyf"]
+[ext_resource type="Texture2D" uid="uid://bpiiklxnojhwb" path="res://item/brainless_jam_items.png" id="2_e30b2"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_254gl"]
+atlas = ExtResource("2_e30b2")
+
+[resource]
+script = ExtResource("1_ffeyf")
+name = "Gold Ingot"
+texture = SubResource("AtlasTexture_254gl")

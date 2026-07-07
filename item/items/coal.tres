@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Item" format=3 uid="uid://ky3wwnkyxr86"]
+
+[ext_resource type="Script" uid="uid://c6sos7llv4wlj" path="res://item/item.gd" id="1_s5vgr"]
+[ext_resource type="Texture2D" uid="uid://bpiiklxnojhwb" path="res://item/brainless_jam_items.png" id="2_ryk4c"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xeoia"]
+atlas = ExtResource("2_ryk4c")
+
+[resource]
+script = ExtResource("1_s5vgr")
+name = "Coal"
+texture = SubResource("AtlasTexture_xeoia")

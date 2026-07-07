@@ -1,0 +1,57 @@
+[gd_scene format=3 uid="uid://dwkaxh1e106lw"]
+
+[ext_resource type="Script" uid="uid://wnkl22fn0v1" path="res://addons/item_editor/item_editor.gd" id="1_bfr3c"]
+
+[node name="ItemEditor" type="PanelContainer" unique_id=740867916]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_bfr3c")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=344575707]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_constants/separation = 50
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer" unique_id=1536711522]
+custom_minimum_size = Vector2(400, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="ItemNameLine" type="LineEdit" parent="HBoxContainer/VBoxContainer" unique_id=1516877834]
+layout_mode = 2
+placeholder_text = "Item Name"
+
+[node name="TextureSelectButton" type="OptionButton" parent="HBoxContainer/VBoxContainer" unique_id=773092870]
+layout_mode = 2
+
+[node name="CreateItemButton" type="Button" parent="HBoxContainer/VBoxContainer" unique_id=54247714]
+layout_mode = 2
+text = "Create Item"
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="HBoxContainer" unique_id=2107239952]
+custom_minimum_size = Vector2(400, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="TextureFileLine" type="LineEdit" parent="HBoxContainer/VBoxContainer2" unique_id=1334518582]
+layout_mode = 2
+placeholder_text = "Texture Path"
+
+[node name="AddTextureButton" type="Button" parent="HBoxContainer/VBoxContainer2" unique_id=955950296]
+layout_mode = 2
+text = "Add Texture"
+
+[node name="ReloadTexturesButton" type="Button" parent="HBoxContainer/VBoxContainer2" unique_id=1743455381]
+layout_mode = 2
+text = "Reload Textures"
+
+[connection signal="tree_exiting" from="." to="." method="_on_tree_exiting"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/CreateItemButton" to="." method="_on_create_item_button_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer2/AddTextureButton" to="." method="_on_add_texture_button_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer2/ReloadTexturesButton" to="." method="_on_reload_textures_button_pressed"]

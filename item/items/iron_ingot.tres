@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Item" format=3 uid="uid://dy27scnjg46xp"]
+
+[ext_resource type="Script" uid="uid://c6sos7llv4wlj" path="res://item/item.gd" id="1_b6vdx"]
+[ext_resource type="Texture2D" uid="uid://bpiiklxnojhwb" path="res://item/brainless_jam_items.png" id="2_vewhc"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_txo3l"]
+atlas = ExtResource("2_vewhc")
+
+[resource]
+script = ExtResource("1_b6vdx")
+name = "Iron Ingot"
+texture = SubResource("AtlasTexture_txo3l")

@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://xge5yncj1mr3"]
+
+[node name="Game" type="Control" unique_id=1507593514]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Inventory" type="GridContainer" parent="." unique_id=41238760]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
