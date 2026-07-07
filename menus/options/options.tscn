@@ -1,0 +1,97 @@
+[gd_scene format=3 uid="uid://6vgoxnb4yb32"]
+
+[ext_resource type="Script" uid="uid://iuuoyyaf7aoi" path="res://menus/options/options.gd" id="1_g8vb3"]
+[ext_resource type="Script" uid="uid://ce28lk1r66wbd" path="res://common/scripts/clicky_button_component.gd" id="2_8tymh"]
+
+[node name="Options" type="Control" unique_id=2111453407]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_g8vb3")
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=1077743316]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="Back" type="Button" parent="MarginContainer" unique_id=729618600]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "Back"
+
+[node name="ClickyButtonComponent" type="Node" parent="MarginContainer/Back" unique_id=386855135]
+script = ExtResource("2_8tymh")
+metadata/_custom_type_script = "uid://ce28lk1r66wbd"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=380616428]
+custom_minimum_size = Vector2(400, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="FPSContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer" unique_id=1268637406]
+layout_mode = 2
+
+[node name="FPSLabel" type="Label" parent="MarginContainer/VBoxContainer/FPSContainer" unique_id=570701775]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+text = "FPS:"
+
+[node name="FPSSlider" type="HSlider" parent="MarginContainer/VBoxContainer/FPSContainer" unique_id=23633015]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+min_value = 60.0
+max_value = 240.0
+step = 30.0
+value = 60.0
+
+[node name="SFXContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer" unique_id=698261079]
+layout_mode = 2
+
+[node name="SFXLabel" type="Label" parent="MarginContainer/VBoxContainer/SFXContainer" unique_id=1373777631]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "SFX Volume"
+
+[node name="SFXSlider" type="HSlider" parent="MarginContainer/VBoxContainer/SFXContainer" unique_id=1152222222]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+max_value = 1.0
+step = 0.01
+
+[node name="MusicContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer" unique_id=139342238]
+layout_mode = 2
+
+[node name="MusicLabel" type="Label" parent="MarginContainer/VBoxContainer/MusicContainer" unique_id=725565254]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Music Volume"
+
+[node name="MusicSlider" type="HSlider" parent="MarginContainer/VBoxContainer/MusicContainer" unique_id=1117250281]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+max_value = 1.0
+step = 0.01
+
+[connection signal="tree_exiting" from="." to="." method="_on_tree_exiting"]
+[connection signal="pressed" from="MarginContainer/Back" to="." method="_on_back_pressed"]
+[connection signal="drag_ended" from="MarginContainer/VBoxContainer/FPSContainer/FPSSlider" to="." method="_on_fps_slider_drag_ended"]
+[connection signal="value_changed" from="MarginContainer/VBoxContainer/FPSContainer/FPSSlider" to="." method="_on_fps_slider_value_changed"]
+[connection signal="drag_ended" from="MarginContainer/VBoxContainer/SFXContainer/SFXSlider" to="." method="_on_sfx_slider_drag_ended"]
+[connection signal="drag_ended" from="MarginContainer/VBoxContainer/MusicContainer/MusicSlider" to="." method="_on_music_slider_drag_ended"]

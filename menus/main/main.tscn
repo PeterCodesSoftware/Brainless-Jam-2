@@ -1,0 +1,56 @@
+[gd_scene format=3 uid="uid://cofjfdj5nghgb"]
+
+[ext_resource type="Script" uid="uid://dh8wqlt6dek0i" path="res://menus/main/main.gd" id="1_c6wqw"]
+[ext_resource type="Script" uid="uid://ce28lk1r66wbd" path="res://common/scripts/clicky_button_component.gd" id="2_rhomd"]
+
+[node name="Main" type="Control" unique_id=2020824125]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_c6wqw")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1862988640]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Play" type="Button" parent="VBoxContainer" unique_id=814399661]
+layout_mode = 2
+text = "Play"
+
+[node name="ClickyButtonComponent" type="Node" parent="VBoxContainer/Play" unique_id=1106166834]
+script = ExtResource("2_rhomd")
+metadata/_custom_type_script = "uid://ce28lk1r66wbd"
+
+[node name="Options" type="Button" parent="VBoxContainer" unique_id=1199034987]
+layout_mode = 2
+text = "Options"
+
+[node name="ClickyButtonComponent" type="Node" parent="VBoxContainer/Options" unique_id=857613616]
+script = ExtResource("2_rhomd")
+metadata/_custom_type_script = "uid://ce28lk1r66wbd"
+
+[node name="Quit" type="Button" parent="VBoxContainer" unique_id=1645995458]
+layout_mode = 2
+text = "Quit"
+
+[node name="ClickyButtonComponent" type="Node" parent="VBoxContainer/Quit" unique_id=1881842680]
+script = ExtResource("2_rhomd")
+metadata/_custom_type_script = "uid://ce28lk1r66wbd"
+
+[connection signal="pressed" from="VBoxContainer/Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="VBoxContainer/Options" to="." method="_on_options_pressed"]
+[connection signal="pressed" from="VBoxContainer/Quit" to="." method="_on_quit_pressed"]
