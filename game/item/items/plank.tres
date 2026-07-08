@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Item" format=3 uid="uid://bj7ifqmgralg8"]
+
+[ext_resource type="Script" uid="uid://c6sos7llv4wlj" path="res://game/item/item.gd" id="1_puydn"]
+[ext_resource type="Texture2D" uid="uid://bpiiklxnojhwb" path="res://game/item/brainless_jam_items.png" id="2_cgg8e"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0rkhw"]
+atlas = ExtResource("2_cgg8e")
+region = Rect2(32, 0, 16, 16)
+
+[resource]
+script = ExtResource("1_puydn")
+name = "Plank"
+texture = SubResource("AtlasTexture_0rkhw")

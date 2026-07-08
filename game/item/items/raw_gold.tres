@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Item" format=3 uid="uid://dhsqxl0t88m3x"]
+
+[ext_resource type="Script" uid="uid://c6sos7llv4wlj" path="res://game/item/item.gd" id="1_ikqrf"]
+[ext_resource type="Texture2D" uid="uid://bpiiklxnojhwb" path="res://game/item/brainless_jam_items.png" id="2_qsf2w"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_prf7x"]
+atlas = ExtResource("2_qsf2w")
+region = Rect2(112, 0, 16, 16)
+
+[resource]
+script = ExtResource("1_ikqrf")
+name = "Raw Gold"
+texture = SubResource("AtlasTexture_prf7x")

@@ -1,7 +1,7 @@
 @tool
 extends PanelContainer
 
-const items_path: String = "res://item/items/"
+const items_path: String = "res://game/item/items/"
 const item_texture_paths_path: String = "user://item_texture_paths.txt"
 
 @onready var item_name_line: LineEdit = $HBoxContainer/VBoxContainer/ItemNameLine

@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://c2jmlhx0po8ey"]
+
+[ext_resource type="Script" uid="uid://dcmra8ajgjlnr" path="res://game/item/item_slot.gd" id="1_rles1"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_dxrkv"]
+outline_size = 10
+outline_color = Color(0, 0, 0, 1)
+
+[node name="ItemSlot" type="PanelContainer" unique_id=627710977]
+custom_minimum_size = Vector2(64, 64)
+script = ExtResource("1_rles1")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=535507168]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=2001435099]
+layout_mode = 2
+theme_override_constants/margin_left = 3
+
+[node name="Label" type="Label" parent="MarginContainer" unique_id=1829722004]
+layout_mode = 2
+size_flags_vertical = 1
+label_settings = SubResource("LabelSettings_dxrkv")
+vertical_alignment = 2

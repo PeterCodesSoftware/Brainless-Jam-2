@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Item" format=3 uid="uid://b6krh0fkcq45w"]
+
+[ext_resource type="Script" uid="uid://c6sos7llv4wlj" path="res://game/item/item.gd" id="1_7etqi"]
+[ext_resource type="Texture2D" uid="uid://bpiiklxnojhwb" path="res://game/item/brainless_jam_items.png" id="2_lp0oq"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tgjdk"]
+atlas = ExtResource("2_lp0oq")
+region = Rect2(80, 0, 16, 16)
+
+[resource]
+script = ExtResource("1_7etqi")
+name = "Rock"
+texture = SubResource("AtlasTexture_tgjdk")

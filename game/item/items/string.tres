@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Item" format=3 uid="uid://ny4b3mex553c"]
+
+[ext_resource type="Script" uid="uid://c6sos7llv4wlj" path="res://game/item/item.gd" id="1_6livr"]
+[ext_resource type="Texture2D" uid="uid://bpiiklxnojhwb" path="res://game/item/brainless_jam_items.png" id="2_tviex"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_76o00"]
+atlas = ExtResource("2_tviex")
+region = Rect2(64, 0, 16, 16)
+
+[resource]
+script = ExtResource("1_6livr")
+name = "String"
+texture = SubResource("AtlasTexture_76o00")
