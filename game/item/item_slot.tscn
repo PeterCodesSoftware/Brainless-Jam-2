@@ -3,11 +3,12 @@
 [ext_resource type="Script" uid="uid://dcmra8ajgjlnr" path="res://game/item/item_slot.gd" id="1_rles1"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_dxrkv"]
+font_size = 10
 outline_size = 10
 outline_color = Color(0, 0, 0, 1)
 
 [node name="ItemSlot" type="PanelContainer" unique_id=627710977]
-custom_minimum_size = Vector2(64, 64)
+custom_minimum_size = Vector2(32, 32)
 script = ExtResource("1_rles1")
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=535507168]

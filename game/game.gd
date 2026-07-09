@@ -1,10 +1,10 @@
-extends Control
+extends TabContainer
 
 @onready var inventory_container: GridContainer = %InventoryContainer
 
 const ITEM_SLOT = preload("uid://c2jmlhx0po8ey")
 
-@export var inventory: Dictionary[Item, int] = {}
+var inventory: Dictionary[Item, int] = {}
 
 func _ready() -> void:
 	for item: Item in inventory.keys():

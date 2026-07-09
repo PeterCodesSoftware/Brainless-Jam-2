@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://3noa1gmpsx54"]
+
+[ext_resource type="Texture2D" uid="uid://cootaniij4r1r" path="res://game/sprites/gosling.tres" id="1_i6p7f"]
+
+[node name="GoslingIMG" type="TextureRect" unique_id=2144349254]
+custom_minimum_size = Vector2(32, 32)
+texture = ExtResource("1_i6p7f")

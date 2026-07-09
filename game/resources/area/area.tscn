@@ -1,0 +1,79 @@
+[gd_scene format=3 uid="uid://dcngkhjtt3gm0"]
+
+[ext_resource type="Script" uid="uid://5xxbdqgqsp1b" path="res://game/resources/area/area.gd" id="1_2ac28"]
+
+[node name="Area" type="PanelContainer" unique_id=987398511]
+script = ExtResource("1_2ac28")
+resources = null
+locked = null
+time_to_drop = null
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=706210755]
+layout_mode = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=916111219]
+layout_mode = 2
+
+[node name="Control" type="Control" parent="MarginContainer/VBoxContainer" unique_id=1916860373]
+custom_minimum_size = Vector2(160, 160)
+layout_mode = 2
+
+[node name="AreaIMG" type="TextureRect" parent="MarginContainer/VBoxContainer/Control" unique_id=1220062613]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(160, 160)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/VBoxContainer/Control" unique_id=1771534632]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 16
+
+[node name="GoslingContainer" type="GridContainer" parent="MarginContainer/VBoxContainer/Control/MarginContainer" unique_id=1145830314]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_constants/h_separation = 16
+theme_override_constants/v_separation = 16
+columns = 3
+
+[node name="DropBar" type="ProgressBar" parent="MarginContainer/VBoxContainer" unique_id=1618445584]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 16)
+layout_mode = 2
+max_value = 1.0
+step = 0.0
+show_percentage = false
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer" unique_id=90630093]
+layout_mode = 2
+
+[node name="AddGosling" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer" unique_id=1987534870]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Add"
+
+[node name="RemoveGosling" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer" unique_id=1168277110]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+disabled = true
+text = "Remove"
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/HBoxContainer/AddGosling" to="." method="_on_add_gosling_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/HBoxContainer/RemoveGosling" to="." method="_on_remove_gosling_pressed"]

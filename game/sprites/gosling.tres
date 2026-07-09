@@ -1,0 +1,7 @@
+[gd_resource type="AtlasTexture" format=3 uid="uid://cootaniij4r1r"]
+
+[ext_resource type="Texture2D" uid="uid://ca8dqdmts37vb" path="res://game/sprites/brainless_jam_gosling.png" id="1_mcob2"]
+
+[resource]
+atlas = ExtResource("1_mcob2")
+region = Rect2(0, 0, 16, 16)
