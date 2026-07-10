@@ -37,7 +37,7 @@ func _ready() -> void:
 	# load crafts
 	for craft_name: String in DirAccess.get_files_at(CRAFTS_PATH):
 		var craft: Craft = load(CRAFTS_PATH + craft_name)
-		used_ingredient_strings[craft.ingredient_string] = craft.product
+		used_ingredient_strings[craft.ingredient_string] = craft.result
 
 func _process(delta: float) -> void:
 	if not selected_item:
