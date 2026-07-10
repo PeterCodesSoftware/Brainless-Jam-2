@@ -1,0 +1,326 @@
+[gd_scene format=3 uid="uid://brd4l5syygmca"]
+
+[ext_resource type="Script" uid="uid://cc5ygx1cbohdr" path="res://addons/craft_editor/craft_editor.gd" id="1_10hhr"]
+[ext_resource type="PackedScene" uid="uid://c2s033jlw8hus" path="res://addons/craft_editor/item_img/item_img.tscn" id="2_txc2g"]
+
+[node name="CraftEditor" type="PanelContainer" unique_id=1174784306]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_10hhr")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=1173495181]
+layout_mode = 2
+
+[node name="ItemContainer" type="GridContainer" parent="HBoxContainer" unique_id=951642354]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+columns = 20
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer" unique_id=1760128023]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="HBoxContainer/VBoxContainer" unique_id=242285621]
+layout_mode = 2
+
+[node name="ResultItem" parent="HBoxContainer/VBoxContainer/HBoxContainer" unique_id=1445859466 instance=ExtResource("2_txc2g")]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 6
+
+[node name="ResultAmount" type="SpinBox" parent="HBoxContainer/VBoxContainer/HBoxContainer" unique_id=669642018]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 6
+min_value = 1.0
+max_value = 1000.0
+value = 1.0
+rounded = true
+
+[node name="CreateCraft" type="Button" parent="HBoxContainer/VBoxContainer/HBoxContainer" unique_id=1532257041]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "Create"
+
+[node name="ResetCraft" type="Button" parent="HBoxContainer/VBoxContainer/HBoxContainer" unique_id=1880372537]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "Reset"
+
+[node name="CraftContainer" type="GridContainer" parent="HBoxContainer/VBoxContainer" unique_id=1710460412]
+unique_name_in_owner = true
+layout_mode = 2
+columns = 7
+
+[node name="ItemIMG" parent="HBoxContainer/VBoxContainer/CraftContainer" unique_id=728238020 instance=ExtResource("2_txc2g")]
+layout_mode = 2
+
+[node name="ItemIMG2" parent="HBoxContainer/VBoxContainer/CraftContainer" unique_id=102735808 instance=ExtResource("2_txc2g")]
+layout_mode = 2
+
+[node name="ItemIMG3" parent="HBoxContainer/VBoxContainer/CraftContainer" unique_id=50189030 instance=ExtResource("2_txc2g")]
+layout_mode = 2
+
+[node name="ItemIMG4" parent="HBoxContainer/VBoxContainer/CraftContainer" unique_id=1824157162 instance=ExtResource("2_txc2g")]
+layout_mode = 2
+
+[node name="ItemIMG5" parent="HBoxContainer/VBoxContainer/CraftContainer" unique_id=381586917 instance=ExtResource("2_txc2g")]
+layout_mode = 2
+
+[node name="ItemIMG6" parent="HBoxContainer/VBoxContainer/CraftContainer" unique_id=295676785 instance=ExtResource("2_txc2g")]
+layout_mode = 2
+
+[node name="ItemIMG7" parent="HBoxContainer/VBoxContainer/CraftContainer" unique_id=1906449355 instance=ExtResource("2_txc2g")]
+layout_mode = 2
+
+[node name="ItemIMG8" parent="HBoxContainer/VBoxContainer/CraftContainer" unique_id=394051834 instance=ExtResource("2_txc2g")]
+layout_mode = 2
+
+[node name="ItemIMG9" parent="HBoxContainer/VBoxContainer/CraftContainer" unique_id=1855423749 instance=ExtResource("2_txc2g")]
+layout_mode = 2
+
+[node name="ItemIMG10" parent="HBoxContainer/VBoxContainer/CraftContainer" unique_id=1388754936 instance=ExtResource("2_txc2g")]
+layout_mode = 2
+
+[node name="ItemIMG11" parent="HBoxContainer/VBoxContainer/CraftContainer" unique_id=174859161 instance=ExtResource("2_txc2g")]
+layout_mode = 2
+
+[node name="ItemIMG12" parent="HBoxContainer/VBoxContainer/CraftContainer" unique_id=630578859 instance=ExtResource("2_txc2g")]
+layout_mode = 2
+
+[node name="ItemIMG13" parent="HBoxContainer/VBoxContainer/CraftContainer" unique_id=500249406 instance=ExtResource("2_txc2g")]
+layout_mode = 2
+
+[node name="ItemIMG14" parent="HBoxContainer/VBoxContainer/CraftContainer" unique_id=1163058998 instance=ExtResource("2_txc2g")]
+layout_mode = 2
+
+[node name="ItemIMG15" parent="HBoxContainer/VBoxContainer/CraftContainer" unique_id=1039586218 instance=ExtResource("2_txc2g")]
+layout_mode = 2
+
+[node name="ItemIMG16" parent="HBoxContainer/VBoxContainer/CraftContainer" unique_id=1781296577 instance=ExtResource("2_txc2g")]
+layout_mode = 2
+
+[node name="ItemIMG17" parent="HBoxContainer/VBoxContainer/CraftContainer" unique_id=1764952717 instance=ExtResource("2_txc2g")]
+layout_mode = 2
+
+[node name="ItemIMG18" parent="HBoxContainer/VBoxContainer/CraftContainer" unique_id=972329173 instance=ExtResource("2_txc2g")]
+layout_mode = 2
+
+[node name="ItemIMG19" parent="HBoxContainer/VBoxContainer/CraftContainer" unique_id=1643915234 instance=ExtResource("2_txc2g")]
+layout_mode = 2
+
+[node name="ItemIMG20" parent="HBoxContainer/VBoxContainer/CraftContainer" unique_id=1536069526 instance=ExtResource("2_txc2g")]
+layout_mode = 2
+
+[node name="ItemIMG21" parent="HBoxContainer/VBoxContainer/CraftContainer" unique_id=829847676 instance=ExtResource("2_txc2g")]
+layout_mode = 2
+
+[node name="ItemIMG22" parent="HBoxContainer/VBoxContainer/CraftContainer" unique_id=1863776342 instance=ExtResource("2_txc2g")]
+layout_mode = 2
+
+[node name="ItemIMG23" parent="HBoxContainer/VBoxContainer/CraftContainer" unique_id=725669498 instance=ExtResource("2_txc2g")]
+layout_mode = 2
+
+[node name="ItemIMG24" parent="HBoxContainer/VBoxContainer/CraftContainer" unique_id=927895634 instance=ExtResource("2_txc2g")]
+layout_mode = 2
+
+[node name="ItemIMG25" parent="HBoxContainer/VBoxContainer/CraftContainer" unique_id=1615224124 instance=ExtResource("2_txc2g")]
+layout_mode = 2
+
+[node name="ItemIMG26" parent="HBoxContainer/VBoxContainer/CraftContainer" unique_id=461771149 instance=ExtResource("2_txc2g")]
+layout_mode = 2
+
+[node name="ItemIMG27" parent="HBoxContainer/VBoxContainer/CraftContainer" unique_id=1160587770 instance=ExtResource("2_txc2g")]
+layout_mode = 2
+
+[node name="ItemIMG28" parent="HBoxContainer/VBoxContainer/CraftContainer" unique_id=892420010 instance=ExtResource("2_txc2g")]
+layout_mode = 2
+
+[node name="ItemIMG29" parent="HBoxContainer/VBoxContainer/CraftContainer" unique_id=1873226056 instance=ExtResource("2_txc2g")]
+layout_mode = 2
+
+[node name="ItemIMG30" parent="HBoxContainer/VBoxContainer/CraftContainer" unique_id=1570446590 instance=ExtResource("2_txc2g")]
+layout_mode = 2
+
+[node name="ItemIMG31" parent="HBoxContainer/VBoxContainer/CraftContainer" unique_id=1768456795 instance=ExtResource("2_txc2g")]
+layout_mode = 2
+
+[node name="ItemIMG32" parent="HBoxContainer/VBoxContainer/CraftContainer" unique_id=1528688722 instance=ExtResource("2_txc2g")]
+layout_mode = 2
+
+[node name="ItemIMG33" parent="HBoxContainer/VBoxContainer/CraftContainer" unique_id=147872794 instance=ExtResource("2_txc2g")]
+layout_mode = 2
+
+[node name="ItemIMG34" parent="HBoxContainer/VBoxContainer/CraftContainer" unique_id=144296046 instance=ExtResource("2_txc2g")]
+layout_mode = 2
+
+[node name="ItemIMG35" parent="HBoxContainer/VBoxContainer/CraftContainer" unique_id=1511694243 instance=ExtResource("2_txc2g")]
+layout_mode = 2
+
+[node name="ItemIMG36" parent="HBoxContainer/VBoxContainer/CraftContainer" unique_id=113057740 instance=ExtResource("2_txc2g")]
+layout_mode = 2
+
+[node name="ItemIMG37" parent="HBoxContainer/VBoxContainer/CraftContainer" unique_id=764841410 instance=ExtResource("2_txc2g")]
+layout_mode = 2
+
+[node name="ItemIMG38" parent="HBoxContainer/VBoxContainer/CraftContainer" unique_id=472372974 instance=ExtResource("2_txc2g")]
+layout_mode = 2
+
+[node name="ItemIMG39" parent="HBoxContainer/VBoxContainer/CraftContainer" unique_id=1302440065 instance=ExtResource("2_txc2g")]
+layout_mode = 2
+
+[node name="ItemIMG40" parent="HBoxContainer/VBoxContainer/CraftContainer" unique_id=91397196 instance=ExtResource("2_txc2g")]
+layout_mode = 2
+
+[node name="ItemIMG41" parent="HBoxContainer/VBoxContainer/CraftContainer" unique_id=176407410 instance=ExtResource("2_txc2g")]
+layout_mode = 2
+
+[node name="ItemIMG42" parent="HBoxContainer/VBoxContainer/CraftContainer" unique_id=108980829 instance=ExtResource("2_txc2g")]
+layout_mode = 2
+
+[node name="ItemIMG43" parent="HBoxContainer/VBoxContainer/CraftContainer" unique_id=1533635010 instance=ExtResource("2_txc2g")]
+layout_mode = 2
+
+[node name="ItemIMG44" parent="HBoxContainer/VBoxContainer/CraftContainer" unique_id=626512355 instance=ExtResource("2_txc2g")]
+layout_mode = 2
+
+[node name="ItemIMG45" parent="HBoxContainer/VBoxContainer/CraftContainer" unique_id=569276296 instance=ExtResource("2_txc2g")]
+layout_mode = 2
+
+[node name="ItemIMG46" parent="HBoxContainer/VBoxContainer/CraftContainer" unique_id=992236067 instance=ExtResource("2_txc2g")]
+layout_mode = 2
+
+[node name="ItemIMG47" parent="HBoxContainer/VBoxContainer/CraftContainer" unique_id=330968463 instance=ExtResource("2_txc2g")]
+layout_mode = 2
+
+[node name="ItemIMG48" parent="HBoxContainer/VBoxContainer/CraftContainer" unique_id=1736873538 instance=ExtResource("2_txc2g")]
+layout_mode = 2
+
+[node name="ItemIMG49" parent="HBoxContainer/VBoxContainer/CraftContainer" unique_id=1217554838 instance=ExtResource("2_txc2g")]
+layout_mode = 2
+
+[node name="SelectedItemSprite" type="Sprite2D" parent="." unique_id=2143895009]
+unique_name_in_owner = true
+visible = false
+self_modulate = Color(1, 1, 1, 0.2901961)
+top_level = true
+scale = Vector2(2, 2)
+
+[connection signal="gui_input" from="HBoxContainer/ItemContainer/ItemIMG" to="HBoxContainer/ItemContainer/ItemIMG" method="_on_gui_input"]
+[connection signal="gui_input" from="HBoxContainer/ItemContainer/@PanelContainer@211828" to="HBoxContainer/ItemContainer/@PanelContainer@211828" method="_on_gui_input"]
+[connection signal="gui_input" from="HBoxContainer/ItemContainer/@PanelContainer@211829" to="HBoxContainer/ItemContainer/@PanelContainer@211829" method="_on_gui_input"]
+[connection signal="gui_input" from="HBoxContainer/ItemContainer/@PanelContainer@211830" to="HBoxContainer/ItemContainer/@PanelContainer@211830" method="_on_gui_input"]
+[connection signal="gui_input" from="HBoxContainer/ItemContainer/@PanelContainer@211831" to="HBoxContainer/ItemContainer/@PanelContainer@211831" method="_on_gui_input"]
+[connection signal="gui_input" from="HBoxContainer/ItemContainer/@PanelContainer@211832" to="HBoxContainer/ItemContainer/@PanelContainer@211832" method="_on_gui_input"]
+[connection signal="gui_input" from="HBoxContainer/ItemContainer/@PanelContainer@211833" to="HBoxContainer/ItemContainer/@PanelContainer@211833" method="_on_gui_input"]
+[connection signal="gui_input" from="HBoxContainer/ItemContainer/@PanelContainer@211834" to="HBoxContainer/ItemContainer/@PanelContainer@211834" method="_on_gui_input"]
+[connection signal="gui_input" from="HBoxContainer/ItemContainer/@PanelContainer@211835" to="HBoxContainer/ItemContainer/@PanelContainer@211835" method="_on_gui_input"]
+[connection signal="gui_input" from="HBoxContainer/ItemContainer/@PanelContainer@211836" to="HBoxContainer/ItemContainer/@PanelContainer@211836" method="_on_gui_input"]
+[connection signal="gui_input" from="HBoxContainer/ItemContainer/@PanelContainer@211837" to="HBoxContainer/ItemContainer/@PanelContainer@211837" method="_on_gui_input"]
+[connection signal="left_clicked" from="HBoxContainer/VBoxContainer/HBoxContainer/ResultItem" to="." method="_on_craft_slot_left_clicked"]
+[connection signal="right_clicked" from="HBoxContainer/VBoxContainer/HBoxContainer/ResultItem" to="." method="_on_craft_slot_right_clicked"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/HBoxContainer/CreateCraft" to="." method="_on_create_craft_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/HBoxContainer/ResetCraft" to="." method="_on_reset_craft_pressed"]
+[connection signal="left_clicked" from="HBoxContainer/VBoxContainer/CraftContainer/ItemIMG" to="." method="_on_craft_slot_left_clicked"]
+[connection signal="right_clicked" from="HBoxContainer/VBoxContainer/CraftContainer/ItemIMG" to="." method="_on_craft_slot_right_clicked"]
+[connection signal="left_clicked" from="HBoxContainer/VBoxContainer/CraftContainer/ItemIMG2" to="." method="_on_craft_slot_left_clicked"]
+[connection signal="right_clicked" from="HBoxContainer/VBoxContainer/CraftContainer/ItemIMG2" to="." method="_on_craft_slot_right_clicked"]
+[connection signal="left_clicked" from="HBoxContainer/VBoxContainer/CraftContainer/ItemIMG3" to="." method="_on_craft_slot_left_clicked"]
+[connection signal="right_clicked" from="HBoxContainer/VBoxContainer/CraftContainer/ItemIMG3" to="." method="_on_craft_slot_right_clicked"]
+[connection signal="left_clicked" from="HBoxContainer/VBoxContainer/CraftContainer/ItemIMG4" to="." method="_on_craft_slot_left_clicked"]
+[connection signal="right_clicked" from="HBoxContainer/VBoxContainer/CraftContainer/ItemIMG4" to="." method="_on_craft_slot_right_clicked"]
+[connection signal="left_clicked" from="HBoxContainer/VBoxContainer/CraftContainer/ItemIMG5" to="." method="_on_craft_slot_left_clicked"]
+[connection signal="right_clicked" from="HBoxContainer/VBoxContainer/CraftContainer/ItemIMG5" to="." method="_on_craft_slot_right_clicked"]
+[connection signal="left_clicked" from="HBoxContainer/VBoxContainer/CraftContainer/ItemIMG6" to="." method="_on_craft_slot_left_clicked"]
+[connection signal="right_clicked" from="HBoxContainer/VBoxContainer/CraftContainer/ItemIMG6" to="." method="_on_craft_slot_right_clicked"]
+[connection signal="left_clicked" from="HBoxContainer/VBoxContainer/CraftContainer/ItemIMG7" to="." method="_on_craft_slot_left_clicked"]
+[connection signal="right_clicked" from="HBoxContainer/VBoxContainer/CraftContainer/ItemIMG7" to="." method="_on_craft_slot_right_clicked"]
+[connection signal="left_clicked" from="HBoxContainer/VBoxContainer/CraftContainer/ItemIMG8" to="." method="_on_craft_slot_left_clicked"]
+[connection signal="right_clicked" from="HBoxContainer/VBoxContainer/CraftContainer/ItemIMG8" to="." method="_on_craft_slot_right_clicked"]
+[connection signal="left_clicked" from="HBoxContainer/VBoxContainer/CraftContainer/ItemIMG9" to="." method="_on_craft_slot_left_clicked"]
+[connection signal="right_clicked" from="HBoxContainer/VBoxContainer/CraftContainer/ItemIMG9" to="." method="_on_craft_slot_right_clicked"]
+[connection signal="left_clicked" from="HBoxContainer/VBoxContainer/CraftContainer/ItemIMG10" to="." method="_on_craft_slot_left_clicked"]
+[connection signal="right_clicked" from="HBoxContainer/VBoxContainer/CraftContainer/ItemIMG10" to="." method="_on_craft_slot_right_clicked"]
+[connection signal="left_clicked" from="HBoxContainer/VBoxContainer/CraftContainer/ItemIMG11" to="." method="_on_craft_slot_left_clicked"]
+[connection signal="right_clicked" from="HBoxContainer/VBoxContainer/CraftContainer/ItemIMG11" to="." method="_on_craft_slot_right_clicked"]
+[connection signal="left_clicked" from="HBoxContainer/VBoxContainer/CraftContainer/ItemIMG12" to="." method="_on_craft_slot_left_clicked"]
+[connection signal="right_clicked" from="HBoxContainer/VBoxContainer/CraftContainer/ItemIMG12" to="." method="_on_craft_slot_right_clicked"]
+[connection signal="left_clicked" from="HBoxContainer/VBoxContainer/CraftContainer/ItemIMG13" to="." method="_on_craft_slot_left_clicked"]
+[connection signal="right_clicked" from="HBoxContainer/VBoxContainer/CraftContainer/ItemIMG13" to="." method="_on_craft_slot_right_clicked"]
+[connection signal="left_clicked" from="HBoxContainer/VBoxContainer/CraftContainer/ItemIMG14" to="." method="_on_craft_slot_left_clicked"]
+[connection signal="right_clicked" from="HBoxContainer/VBoxContainer/CraftContainer/ItemIMG14" to="." method="_on_craft_slot_right_clicked"]
+[connection signal="left_clicked" from="HBoxContainer/VBoxContainer/CraftContainer/ItemIMG15" to="." method="_on_craft_slot_left_clicked"]
+[connection signal="right_clicked" from="HBoxContainer/VBoxContainer/CraftContainer/ItemIMG15" to="." method="_on_craft_slot_right_clicked"]
+[connection signal="left_clicked" from="HBoxContainer/VBoxContainer/CraftContainer/ItemIMG16" to="." method="_on_craft_slot_left_clicked"]
+[connection signal="right_clicked" from="HBoxContainer/VBoxContainer/CraftContainer/ItemIMG16" to="." method="_on_craft_slot_right_clicked"]
+[connection signal="left_clicked" from="HBoxContainer/VBoxContainer/CraftContainer/ItemIMG17" to="." method="_on_craft_slot_left_clicked"]
+[connection signal="right_clicked" from="HBoxContainer/VBoxContainer/CraftContainer/ItemIMG17" to="." method="_on_craft_slot_right_clicked"]
+[connection signal="left_clicked" from="HBoxContainer/VBoxContainer/CraftContainer/ItemIMG18" to="." method="_on_craft_slot_left_clicked"]
+[connection signal="right_clicked" from="HBoxContainer/VBoxContainer/CraftContainer/ItemIMG18" to="." method="_on_craft_slot_right_clicked"]
+[connection signal="left_clicked" from="HBoxContainer/VBoxContainer/CraftContainer/ItemIMG19" to="." method="_on_craft_slot_left_clicked"]
+[connection signal="right_clicked" from="HBoxContainer/VBoxContainer/CraftContainer/ItemIMG19" to="." method="_on_craft_slot_right_clicked"]
+[connection signal="left_clicked" from="HBoxContainer/VBoxContainer/CraftContainer/ItemIMG20" to="." method="_on_craft_slot_left_clicked"]
+[connection signal="right_clicked" from="HBoxContainer/VBoxContainer/CraftContainer/ItemIMG20" to="." method="_on_craft_slot_right_clicked"]
+[connection signal="left_clicked" from="HBoxContainer/VBoxContainer/CraftContainer/ItemIMG21" to="." method="_on_craft_slot_left_clicked"]
+[connection signal="right_clicked" from="HBoxContainer/VBoxContainer/CraftContainer/ItemIMG21" to="." method="_on_craft_slot_right_clicked"]
+[connection signal="left_clicked" from="HBoxContainer/VBoxContainer/CraftContainer/ItemIMG22" to="." method="_on_craft_slot_left_clicked"]
+[connection signal="right_clicked" from="HBoxContainer/VBoxContainer/CraftContainer/ItemIMG22" to="." method="_on_craft_slot_right_clicked"]
+[connection signal="left_clicked" from="HBoxContainer/VBoxContainer/CraftContainer/ItemIMG23" to="." method="_on_craft_slot_left_clicked"]
+[connection signal="right_clicked" from="HBoxContainer/VBoxContainer/CraftContainer/ItemIMG23" to="." method="_on_craft_slot_right_clicked"]
+[connection signal="left_clicked" from="HBoxContainer/VBoxContainer/CraftContainer/ItemIMG24" to="." method="_on_craft_slot_left_clicked"]
+[connection signal="right_clicked" from="HBoxContainer/VBoxContainer/CraftContainer/ItemIMG24" to="." method="_on_craft_slot_right_clicked"]
+[connection signal="left_clicked" from="HBoxContainer/VBoxContainer/CraftContainer/ItemIMG25" to="." method="_on_craft_slot_left_clicked"]
+[connection signal="right_clicked" from="HBoxContainer/VBoxContainer/CraftContainer/ItemIMG25" to="." method="_on_craft_slot_right_clicked"]
+[connection signal="left_clicked" from="HBoxContainer/VBoxContainer/CraftContainer/ItemIMG26" to="." method="_on_craft_slot_left_clicked"]
+[connection signal="right_clicked" from="HBoxContainer/VBoxContainer/CraftContainer/ItemIMG26" to="." method="_on_craft_slot_right_clicked"]
+[connection signal="left_clicked" from="HBoxContainer/VBoxContainer/CraftContainer/ItemIMG27" to="." method="_on_craft_slot_left_clicked"]
+[connection signal="right_clicked" from="HBoxContainer/VBoxContainer/CraftContainer/ItemIMG27" to="." method="_on_craft_slot_right_clicked"]
+[connection signal="left_clicked" from="HBoxContainer/VBoxContainer/CraftContainer/ItemIMG28" to="." method="_on_craft_slot_left_clicked"]
+[connection signal="right_clicked" from="HBoxContainer/VBoxContainer/CraftContainer/ItemIMG28" to="." method="_on_craft_slot_right_clicked"]
+[connection signal="left_clicked" from="HBoxContainer/VBoxContainer/CraftContainer/ItemIMG29" to="." method="_on_craft_slot_left_clicked"]
+[connection signal="right_clicked" from="HBoxContainer/VBoxContainer/CraftContainer/ItemIMG29" to="." method="_on_craft_slot_right_clicked"]
+[connection signal="left_clicked" from="HBoxContainer/VBoxContainer/CraftContainer/ItemIMG30" to="." method="_on_craft_slot_left_clicked"]
+[connection signal="right_clicked" from="HBoxContainer/VBoxContainer/CraftContainer/ItemIMG30" to="." method="_on_craft_slot_right_clicked"]
+[connection signal="left_clicked" from="HBoxContainer/VBoxContainer/CraftContainer/ItemIMG31" to="." method="_on_craft_slot_left_clicked"]
+[connection signal="right_clicked" from="HBoxContainer/VBoxContainer/CraftContainer/ItemIMG31" to="." method="_on_craft_slot_right_clicked"]
+[connection signal="left_clicked" from="HBoxContainer/VBoxContainer/CraftContainer/ItemIMG32" to="." method="_on_craft_slot_left_clicked"]
+[connection signal="right_clicked" from="HBoxContainer/VBoxContainer/CraftContainer/ItemIMG32" to="." method="_on_craft_slot_right_clicked"]
+[connection signal="left_clicked" from="HBoxContainer/VBoxContainer/CraftContainer/ItemIMG33" to="." method="_on_craft_slot_left_clicked"]
+[connection signal="right_clicked" from="HBoxContainer/VBoxContainer/CraftContainer/ItemIMG33" to="." method="_on_craft_slot_right_clicked"]
+[connection signal="left_clicked" from="HBoxContainer/VBoxContainer/CraftContainer/ItemIMG34" to="." method="_on_craft_slot_left_clicked"]
+[connection signal="right_clicked" from="HBoxContainer/VBoxContainer/CraftContainer/ItemIMG34" to="." method="_on_craft_slot_right_clicked"]
+[connection signal="left_clicked" from="HBoxContainer/VBoxContainer/CraftContainer/ItemIMG35" to="." method="_on_craft_slot_left_clicked"]
+[connection signal="right_clicked" from="HBoxContainer/VBoxContainer/CraftContainer/ItemIMG35" to="." method="_on_craft_slot_right_clicked"]
+[connection signal="left_clicked" from="HBoxContainer/VBoxContainer/CraftContainer/ItemIMG36" to="." method="_on_craft_slot_left_clicked"]
+[connection signal="right_clicked" from="HBoxContainer/VBoxContainer/CraftContainer/ItemIMG36" to="." method="_on_craft_slot_right_clicked"]
+[connection signal="left_clicked" from="HBoxContainer/VBoxContainer/CraftContainer/ItemIMG37" to="." method="_on_craft_slot_left_clicked"]
+[connection signal="right_clicked" from="HBoxContainer/VBoxContainer/CraftContainer/ItemIMG37" to="." method="_on_craft_slot_right_clicked"]
+[connection signal="left_clicked" from="HBoxContainer/VBoxContainer/CraftContainer/ItemIMG38" to="." method="_on_craft_slot_left_clicked"]
+[connection signal="right_clicked" from="HBoxContainer/VBoxContainer/CraftContainer/ItemIMG38" to="." method="_on_craft_slot_right_clicked"]
+[connection signal="left_clicked" from="HBoxContainer/VBoxContainer/CraftContainer/ItemIMG39" to="." method="_on_craft_slot_left_clicked"]
+[connection signal="right_clicked" from="HBoxContainer/VBoxContainer/CraftContainer/ItemIMG39" to="." method="_on_craft_slot_right_clicked"]
+[connection signal="left_clicked" from="HBoxContainer/VBoxContainer/CraftContainer/ItemIMG40" to="." method="_on_craft_slot_left_clicked"]
+[connection signal="right_clicked" from="HBoxContainer/VBoxContainer/CraftContainer/ItemIMG40" to="." method="_on_craft_slot_right_clicked"]
+[connection signal="left_clicked" from="HBoxContainer/VBoxContainer/CraftContainer/ItemIMG41" to="." method="_on_craft_slot_left_clicked"]
+[connection signal="right_clicked" from="HBoxContainer/VBoxContainer/CraftContainer/ItemIMG41" to="." method="_on_craft_slot_right_clicked"]
+[connection signal="left_clicked" from="HBoxContainer/VBoxContainer/CraftContainer/ItemIMG42" to="." method="_on_craft_slot_left_clicked"]
+[connection signal="right_clicked" from="HBoxContainer/VBoxContainer/CraftContainer/ItemIMG42" to="." method="_on_craft_slot_right_clicked"]
+[connection signal="left_clicked" from="HBoxContainer/VBoxContainer/CraftContainer/ItemIMG43" to="." method="_on_craft_slot_left_clicked"]
+[connection signal="right_clicked" from="HBoxContainer/VBoxContainer/CraftContainer/ItemIMG43" to="." method="_on_craft_slot_right_clicked"]
+[connection signal="left_clicked" from="HBoxContainer/VBoxContainer/CraftContainer/ItemIMG44" to="." method="_on_craft_slot_left_clicked"]
+[connection signal="right_clicked" from="HBoxContainer/VBoxContainer/CraftContainer/ItemIMG44" to="." method="_on_craft_slot_right_clicked"]
+[connection signal="left_clicked" from="HBoxContainer/VBoxContainer/CraftContainer/ItemIMG45" to="." method="_on_craft_slot_left_clicked"]
+[connection signal="right_clicked" from="HBoxContainer/VBoxContainer/CraftContainer/ItemIMG45" to="." method="_on_craft_slot_right_clicked"]
+[connection signal="left_clicked" from="HBoxContainer/VBoxContainer/CraftContainer/ItemIMG46" to="." method="_on_craft_slot_left_clicked"]
+[connection signal="right_clicked" from="HBoxContainer/VBoxContainer/CraftContainer/ItemIMG46" to="." method="_on_craft_slot_right_clicked"]
+[connection signal="left_clicked" from="HBoxContainer/VBoxContainer/CraftContainer/ItemIMG47" to="." method="_on_craft_slot_left_clicked"]
+[connection signal="right_clicked" from="HBoxContainer/VBoxContainer/CraftContainer/ItemIMG47" to="." method="_on_craft_slot_right_clicked"]
+[connection signal="left_clicked" from="HBoxContainer/VBoxContainer/CraftContainer/ItemIMG48" to="." method="_on_craft_slot_left_clicked"]
+[connection signal="right_clicked" from="HBoxContainer/VBoxContainer/CraftContainer/ItemIMG48" to="." method="_on_craft_slot_right_clicked"]
+[connection signal="left_clicked" from="HBoxContainer/VBoxContainer/CraftContainer/ItemIMG49" to="." method="_on_craft_slot_left_clicked"]
+[connection signal="right_clicked" from="HBoxContainer/VBoxContainer/CraftContainer/ItemIMG49" to="." method="_on_craft_slot_right_clicked"]

@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://dcngkhjtt3gm0"]
 
 [ext_resource type="Script" uid="uid://5xxbdqgqsp1b" path="res://game/resources/area/area.gd" id="1_2ac28"]
+[ext_resource type="Texture2D" uid="uid://b5onq2i7x1l77" path="res://game/resources/area/brainless_jam_area_lock.png" id="2_40g3k"]
 
 [node name="Area" type="PanelContainer" unique_id=987398511]
 script = ExtResource("1_2ac28")
@@ -28,6 +29,16 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="LockIMG" type="TextureRect" parent="MarginContainer/VBoxContainer/Control" unique_id=1216050683]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_40g3k")
 
 [node name="MarginContainer" type="MarginContainer" parent="MarginContainer/VBoxContainer/Control" unique_id=1771534632]
 layout_mode = 1
