@@ -36,11 +36,10 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-current_tab = 3
+current_tab = 0
 script = ExtResource("1_l1rk1")
 
 [node name="Crafting" type="Control" parent="." unique_id=1898991696]
-visible = false
 layout_mode = 2
 script = ExtResource("6_dakft")
 metadata/_tab_index = 0
@@ -109,6 +108,7 @@ layout_mode = 2
 metadata/_tab_index = 2
 
 [node name="Resources" type="Control" parent="." unique_id=483067521]
+visible = false
 layout_mode = 2
 script = ExtResource("7_u5opy")
 metadata/_tab_index = 3
@@ -160,5 +160,6 @@ resources = Dictionary[ExtResource("2_dxrkv"), ExtResource("10_qf6n1")]({
 ExtResource("4_u5opy"): SubResource("Resource_j8tme"),
 ExtResource("11_vsp63"): SubResource("Resource_3vho3")
 })
-locked = false
 texture = SubResource("AtlasTexture_y36n6")
+locked = false
+time_to_drop = 10.0

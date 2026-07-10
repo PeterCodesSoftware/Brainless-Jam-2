@@ -4,7 +4,11 @@ extends PanelContainer
 @onready var label: Label = $MarginContainer/Label
 
 var item: Item
-var amount: int
+var amount: int:
+	set(value):
+		amount = value
+		if is_node_ready():
+			label.text = str(amount)
 
 func _ready() -> void:
 	if not item:

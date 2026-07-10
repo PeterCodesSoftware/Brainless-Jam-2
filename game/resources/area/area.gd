@@ -17,6 +17,9 @@ var working_goslings: int = 0
 var is_drop_bar_active: bool = false
 
 func _process(delta: float) -> void:
+	if not is_drop_bar_active:
+		return
+	
 	drop_bar.value += (1 / time_to_drop) * delta
 	if drop_bar.value >= 1:
 		drop_bar.value = 0
@@ -24,7 +27,7 @@ func _process(delta: float) -> void:
 
 func collect_drops() -> void:
 	for item: Item in resources.keys():
-		
+		GM.add_item(item, resources[item].get_drop(working_goslings))
 
 func unlock() -> void:
 	if not locked:
@@ -68,10 +71,11 @@ func _on_remove_gosling_pressed() -> void:
 		stop_progress_bar()
 
 func start_progress_bar() -> void:
-	pass
+	is_drop_bar_active = true
 
 func stop_progress_bar() -> void:
-	pass
+	is_drop_bar_active = false
+	drop_bar.value = 0
 
 func remove_last_child(node: Node) -> void:
 	node.remove_child(node.get_child(node.get_child_count() - 1))

@@ -4,9 +4,6 @@
 
 [node name="Area" type="PanelContainer" unique_id=987398511]
 script = ExtResource("1_2ac28")
-resources = null
-locked = null
-time_to_drop = null
 
 [node name="MarginContainer" type="MarginContainer" parent="." unique_id=706210755]
 layout_mode = 2
