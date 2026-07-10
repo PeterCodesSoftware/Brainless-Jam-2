@@ -36,6 +36,7 @@ func unlock() -> void:
 	locked = false
 	add_gosling.disabled = false
 	remove_gosling.disabled = false
+	%LockIMG.queue_free()
 	%AreaIMG.texture = texture
 
 func _ready() -> void:
@@ -43,6 +44,7 @@ func _ready() -> void:
 		add_gosling.disabled = true
 		remove_gosling.disabled = true
 	else:
+		%LockIMG.queue_free()
 		%AreaIMG.texture = texture
 
 func _on_add_gosling_pressed() -> void:

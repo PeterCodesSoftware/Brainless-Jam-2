@@ -31,7 +31,7 @@ window/stretch/mode="viewport"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/item_editor/plugin.cfg")
+enabled=PackedStringArray("res://addons/craft_editor/plugin.cfg", "res://addons/item_editor/plugin.cfg")
 
 [physics]
 

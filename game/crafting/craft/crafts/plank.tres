@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Craft" format=3 uid="uid://ct3vbtigdqaiv"]
+
+[ext_resource type="Script" uid="uid://c6sos7llv4wlj" path="res://game/item/item.gd" id="1_02q8j"]
+[ext_resource type="Resource" uid="uid://rak3lenfmhta" path="res://game/item/items/log.tres" id="2_oht03"]
+[ext_resource type="Resource" uid="uid://bj7ifqmgralg8" path="res://game/item/items/plank.tres" id="3_xutde"]
+[ext_resource type="Script" uid="uid://bb0kfimo83bni" path="res://game/crafting/craft/craft.gd" id="4_f7dia"]
+
+[resource]
+script = ExtResource("4_f7dia")
+ingredient_string = "........................Log........................"
+ingredients = Dictionary[ExtResource("1_02q8j"), int]({
+ExtResource("2_oht03"): 1
+})
+result = ExtResource("3_xutde")
