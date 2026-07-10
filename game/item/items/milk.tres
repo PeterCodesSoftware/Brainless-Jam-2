@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Item" format=3 uid="uid://butydr2b8gnqq"]
+
+[ext_resource type="Script" uid="uid://c6sos7llv4wlj" path="res://game/item/item.gd" id="1_07ngd"]
+[ext_resource type="Texture2D" uid="uid://bb8k4gwpgrug5" path="res://game/item/Brainless_jam_items_2.png" id="2_jysqv"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_boew0"]
+atlas = ExtResource("2_jysqv")
+region = Rect2(0, 0, 16, 16)
+
+[resource]
+script = ExtResource("1_07ngd")
+name = "Milk"
+texture = SubResource("AtlasTexture_boew0")

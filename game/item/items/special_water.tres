@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Item" format=3 uid="uid://p2vmoif2utdu"]
+
+[ext_resource type="Script" uid="uid://c6sos7llv4wlj" path="res://game/item/item.gd" id="1_0k42g"]
+[ext_resource type="Texture2D" uid="uid://bb8k4gwpgrug5" path="res://game/item/Brainless_jam_items_2.png" id="2_0k42g"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vdivd"]
+atlas = ExtResource("2_0k42g")
+region = Rect2(112, 0, 16, 16)
+
+[resource]
+script = ExtResource("1_0k42g")
+name = "Special Water"
+texture = SubResource("AtlasTexture_vdivd")

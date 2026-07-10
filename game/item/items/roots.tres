@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Item" format=3 uid="uid://cwopqwxmll672"]
+
+[ext_resource type="Script" uid="uid://c6sos7llv4wlj" path="res://game/item/item.gd" id="1_7cn6c"]
+[ext_resource type="Texture2D" uid="uid://bb8k4gwpgrug5" path="res://game/item/Brainless_jam_items_2.png" id="2_7cn6c"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r0bva"]
+atlas = ExtResource("2_7cn6c")
+region = Rect2(80, 0, 16, 16)
+
+[resource]
+script = ExtResource("1_7cn6c")
+name = "Roots"
+texture = SubResource("AtlasTexture_r0bva")

@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Item" format=3 uid="uid://dfvbdkcbgkml5"]
+
+[ext_resource type="Script" uid="uid://c6sos7llv4wlj" path="res://game/item/item.gd" id="1_mgp8r"]
+[ext_resource type="Texture2D" uid="uid://bb8k4gwpgrug5" path="res://game/item/Brainless_jam_items_2.png" id="2_mgp8r"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qvrqt"]
+atlas = ExtResource("2_mgp8r")
+region = Rect2(16, 0, 16, 16)
+
+[resource]
+script = ExtResource("1_mgp8r")
+name = "Wood Sword"
+texture = SubResource("AtlasTexture_qvrqt")
