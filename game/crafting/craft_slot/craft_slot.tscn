@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://dhy1gihfvw5cu"]
+
+[ext_resource type="Script" uid="uid://b1svv4yem24wo" path="res://game/crafting/craft_slot/craft_slot.gd" id="1_aax1m"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mgp8r"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.16565639, 0.16565642, 0.16565639, 1)
+
+[node name="CraftSlot" type="PanelContainer" unique_id=955163077]
+theme_override_styles/panel = SubResource("StyleBoxFlat_mgp8r")
+script = ExtResource("1_aax1m")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1047797220]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2

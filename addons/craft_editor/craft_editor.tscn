@@ -20,7 +20,7 @@ layout_mode = 2
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
-columns = 20
+columns = 18
 
 [node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer" unique_id=1760128023]
 layout_mode = 2
@@ -212,24 +212,24 @@ top_level = true
 scale = Vector2(2, 2)
 
 [connection signal="gui_input" from="HBoxContainer/ItemContainer/ItemIMG" to="HBoxContainer/ItemContainer/ItemIMG" method="_on_gui_input"]
-[connection signal="gui_input" from="HBoxContainer/ItemContainer/@PanelContainer@20074" to="HBoxContainer/ItemContainer/@PanelContainer@20074" method="_on_gui_input"]
-[connection signal="gui_input" from="HBoxContainer/ItemContainer/@PanelContainer@20075" to="HBoxContainer/ItemContainer/@PanelContainer@20075" method="_on_gui_input"]
-[connection signal="gui_input" from="HBoxContainer/ItemContainer/@PanelContainer@20076" to="HBoxContainer/ItemContainer/@PanelContainer@20076" method="_on_gui_input"]
-[connection signal="gui_input" from="HBoxContainer/ItemContainer/@PanelContainer@20077" to="HBoxContainer/ItemContainer/@PanelContainer@20077" method="_on_gui_input"]
-[connection signal="gui_input" from="HBoxContainer/ItemContainer/@PanelContainer@20078" to="HBoxContainer/ItemContainer/@PanelContainer@20078" method="_on_gui_input"]
-[connection signal="gui_input" from="HBoxContainer/ItemContainer/@PanelContainer@20079" to="HBoxContainer/ItemContainer/@PanelContainer@20079" method="_on_gui_input"]
-[connection signal="gui_input" from="HBoxContainer/ItemContainer/@PanelContainer@20080" to="HBoxContainer/ItemContainer/@PanelContainer@20080" method="_on_gui_input"]
-[connection signal="gui_input" from="HBoxContainer/ItemContainer/@PanelContainer@20081" to="HBoxContainer/ItemContainer/@PanelContainer@20081" method="_on_gui_input"]
-[connection signal="gui_input" from="HBoxContainer/ItemContainer/@PanelContainer@20082" to="HBoxContainer/ItemContainer/@PanelContainer@20082" method="_on_gui_input"]
-[connection signal="gui_input" from="HBoxContainer/ItemContainer/@PanelContainer@20083" to="HBoxContainer/ItemContainer/@PanelContainer@20083" method="_on_gui_input"]
-[connection signal="gui_input" from="HBoxContainer/ItemContainer/@PanelContainer@20084" to="HBoxContainer/ItemContainer/@PanelContainer@20084" method="_on_gui_input"]
-[connection signal="gui_input" from="HBoxContainer/ItemContainer/@PanelContainer@20085" to="HBoxContainer/ItemContainer/@PanelContainer@20085" method="_on_gui_input"]
-[connection signal="gui_input" from="HBoxContainer/ItemContainer/@PanelContainer@20086" to="HBoxContainer/ItemContainer/@PanelContainer@20086" method="_on_gui_input"]
-[connection signal="gui_input" from="HBoxContainer/ItemContainer/@PanelContainer@20087" to="HBoxContainer/ItemContainer/@PanelContainer@20087" method="_on_gui_input"]
-[connection signal="gui_input" from="HBoxContainer/ItemContainer/@PanelContainer@20088" to="HBoxContainer/ItemContainer/@PanelContainer@20088" method="_on_gui_input"]
-[connection signal="gui_input" from="HBoxContainer/ItemContainer/@PanelContainer@20089" to="HBoxContainer/ItemContainer/@PanelContainer@20089" method="_on_gui_input"]
-[connection signal="gui_input" from="HBoxContainer/ItemContainer/@PanelContainer@20090" to="HBoxContainer/ItemContainer/@PanelContainer@20090" method="_on_gui_input"]
-[connection signal="gui_input" from="HBoxContainer/ItemContainer/@PanelContainer@20091" to="HBoxContainer/ItemContainer/@PanelContainer@20091" method="_on_gui_input"]
+[connection signal="gui_input" from="HBoxContainer/ItemContainer/@PanelContainer@24969" to="HBoxContainer/ItemContainer/@PanelContainer@24969" method="_on_gui_input"]
+[connection signal="gui_input" from="HBoxContainer/ItemContainer/@PanelContainer@24970" to="HBoxContainer/ItemContainer/@PanelContainer@24970" method="_on_gui_input"]
+[connection signal="gui_input" from="HBoxContainer/ItemContainer/@PanelContainer@24971" to="HBoxContainer/ItemContainer/@PanelContainer@24971" method="_on_gui_input"]
+[connection signal="gui_input" from="HBoxContainer/ItemContainer/@PanelContainer@24972" to="HBoxContainer/ItemContainer/@PanelContainer@24972" method="_on_gui_input"]
+[connection signal="gui_input" from="HBoxContainer/ItemContainer/@PanelContainer@24973" to="HBoxContainer/ItemContainer/@PanelContainer@24973" method="_on_gui_input"]
+[connection signal="gui_input" from="HBoxContainer/ItemContainer/@PanelContainer@24974" to="HBoxContainer/ItemContainer/@PanelContainer@24974" method="_on_gui_input"]
+[connection signal="gui_input" from="HBoxContainer/ItemContainer/@PanelContainer@24975" to="HBoxContainer/ItemContainer/@PanelContainer@24975" method="_on_gui_input"]
+[connection signal="gui_input" from="HBoxContainer/ItemContainer/@PanelContainer@24976" to="HBoxContainer/ItemContainer/@PanelContainer@24976" method="_on_gui_input"]
+[connection signal="gui_input" from="HBoxContainer/ItemContainer/@PanelContainer@24977" to="HBoxContainer/ItemContainer/@PanelContainer@24977" method="_on_gui_input"]
+[connection signal="gui_input" from="HBoxContainer/ItemContainer/@PanelContainer@24978" to="HBoxContainer/ItemContainer/@PanelContainer@24978" method="_on_gui_input"]
+[connection signal="gui_input" from="HBoxContainer/ItemContainer/@PanelContainer@24979" to="HBoxContainer/ItemContainer/@PanelContainer@24979" method="_on_gui_input"]
+[connection signal="gui_input" from="HBoxContainer/ItemContainer/@PanelContainer@24980" to="HBoxContainer/ItemContainer/@PanelContainer@24980" method="_on_gui_input"]
+[connection signal="gui_input" from="HBoxContainer/ItemContainer/@PanelContainer@24981" to="HBoxContainer/ItemContainer/@PanelContainer@24981" method="_on_gui_input"]
+[connection signal="gui_input" from="HBoxContainer/ItemContainer/@PanelContainer@24982" to="HBoxContainer/ItemContainer/@PanelContainer@24982" method="_on_gui_input"]
+[connection signal="gui_input" from="HBoxContainer/ItemContainer/@PanelContainer@24983" to="HBoxContainer/ItemContainer/@PanelContainer@24983" method="_on_gui_input"]
+[connection signal="gui_input" from="HBoxContainer/ItemContainer/@PanelContainer@24984" to="HBoxContainer/ItemContainer/@PanelContainer@24984" method="_on_gui_input"]
+[connection signal="gui_input" from="HBoxContainer/ItemContainer/@PanelContainer@24985" to="HBoxContainer/ItemContainer/@PanelContainer@24985" method="_on_gui_input"]
+[connection signal="gui_input" from="HBoxContainer/ItemContainer/@PanelContainer@24986" to="HBoxContainer/ItemContainer/@PanelContainer@24986" method="_on_gui_input"]
 [connection signal="left_clicked" from="HBoxContainer/VBoxContainer/HBoxContainer/ResultItem" to="." method="_on_craft_slot_left_clicked"]
 [connection signal="right_clicked" from="HBoxContainer/VBoxContainer/HBoxContainer/ResultItem" to="." method="_on_craft_slot_right_clicked"]
 [connection signal="pressed" from="HBoxContainer/VBoxContainer/HBoxContainer/CreateCraft" to="." method="_on_create_craft_pressed"]

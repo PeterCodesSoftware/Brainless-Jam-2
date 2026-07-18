@@ -6,6 +6,9 @@ signal goslings_available_changed
 signal update_item_slot(item: Item)
 signal create_item_slot(item: Item)
 
+@warning_ignore("unused_signal")
+signal unlock_area(area_name: String)
+
 var goslings_available: int = 1:
 	set(value):
 		goslings_available = value

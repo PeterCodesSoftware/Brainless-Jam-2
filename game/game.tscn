@@ -2,6 +2,8 @@
 
 [ext_resource type="Script" uid="uid://b8n0shuomaav1" path="res://game/game.gd" id="1_l1rk1"]
 [ext_resource type="Script" uid="uid://c6sos7llv4wlj" path="res://game/item/item.gd" id="2_dxrkv"]
+[ext_resource type="Script" uid="uid://bcwn5ub5t231v" path="res://game/upgrades/upgrades.gd" id="3_3vho3"]
+[ext_resource type="PackedScene" uid="uid://ciynurjikpeqt" path="res://game/upgrades/upgrade_block/UpgradeBlock.tscn" id="4_qf6n1"]
 [ext_resource type="Resource" uid="uid://dnw2c4tjih0uf" path="res://game/item/items/fiber.tres" id="4_u5opy"]
 [ext_resource type="Script" uid="uid://bqbbfw1dwo8hh" path="res://game/crafting/crafting.gd" id="6_dakft"]
 [ext_resource type="Script" uid="uid://x5417vobh6w1" path="res://game/resources/resources.gd" id="7_u5opy"]
@@ -36,10 +38,11 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-current_tab = 0
+current_tab = 2
 script = ExtResource("1_l1rk1")
 
 [node name="Crafting" type="Control" parent="." unique_id=1898991696]
+visible = false
 layout_mode = 2
 script = ExtResource("6_dakft")
 metadata/_tab_index = 0
@@ -103,9 +106,26 @@ layout_mode = 2
 metadata/_tab_index = 1
 
 [node name="Upgrades" type="Control" parent="." unique_id=1480121995]
-visible = false
 layout_mode = 2
+script = ExtResource("3_3vho3")
 metadata/_tab_index = 2
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="Upgrades" unique_id=1050376653]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="SubViewport" type="SubViewport" parent="Upgrades/SubViewportContainer" unique_id=215486210]
+size = Vector2i(1152, 617)
+
+[node name="Upgrade" parent="Upgrades/SubViewportContainer/SubViewport" unique_id=247773113 instance=ExtResource("4_qf6n1")]
+offset_left = 613.0
+offset_top = 267.0
+offset_right = 675.0
+offset_bottom = 298.0
 
 [node name="Resources" type="Control" parent="." unique_id=483067521]
 visible = false

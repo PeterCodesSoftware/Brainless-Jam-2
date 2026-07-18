@@ -29,8 +29,8 @@ func collect_drops() -> void:
 	for item: Item in resources.keys():
 		GM.add_item(item, resources[item].get_drop(working_goslings))
 
-func unlock() -> void:
-	if not locked:
+func unlock(area_name: String) -> void:
+	if area_name != name or not locked:
 		return
 	
 	locked = false
@@ -46,6 +46,8 @@ func _ready() -> void:
 	else:
 		%LockIMG.queue_free()
 		%AreaIMG.texture = texture
+	
+	GM.unlock_area.connect(unlock)
 
 func _on_add_gosling_pressed() -> void:
 	if GM.goslings_available == 0:

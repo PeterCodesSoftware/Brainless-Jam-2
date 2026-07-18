@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="Craft" format=3 uid="uid://bg780eidkd76n"]
+
+[ext_resource type="Script" uid="uid://c6sos7llv4wlj" path="res://game/item/item.gd" id="1_pwcy4"]
+[ext_resource type="Resource" uid="uid://c2il1om33vttt" path="res://game/item/items/stick.tres" id="2_rkcc6"]
+[ext_resource type="Resource" uid="uid://cwjmk6lvdutca" path="res://game/item/items/slimes.tres" id="3_hyvrj"]
+[ext_resource type="Resource" uid="uid://cwopqwxmll672" path="res://game/item/items/roots.tres" id="4_2tr4w"]
+[ext_resource type="Resource" uid="uid://bsurmb4ks8wxa" path="res://game/item/items/frog_legs.tres" id="5_oofc1"]
+[ext_resource type="Script" uid="uid://bb0kfimo83bni" path="res://game/crafting/craft/craft.gd" id="6_o0i1f"]
+
+[resource]
+script = ExtResource("6_o0i1f")
+ingredient_string = "./././././././././././././././././Stick/./././././Stick/Slimes/Stick/././././Roots/Roots/Roots/./././././././././././././././."
+ingredients = Dictionary[ExtResource("1_pwcy4"), int]({
+ExtResource("2_rkcc6"): 3,
+ExtResource("3_hyvrj"): 1,
+ExtResource("4_2tr4w"): 3
+})
+result = ExtResource("5_oofc1")

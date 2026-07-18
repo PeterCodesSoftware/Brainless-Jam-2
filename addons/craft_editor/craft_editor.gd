@@ -67,15 +67,18 @@ func _on_create_craft_pressed() -> void:
 		return
 	
 	# create ingredient string
-	var ingredient_string: String = ""
+	
+	var ingredient_list: Array[String]
 	for craft_item in craft_items:
 		if craft_item.item:
-			ingredient_string += craft_item.item.name
+			ingredient_list.append(craft_item.item.name)
 		else:
-			ingredient_string += "."
+			ingredient_list.append(".")
+	var delimiter: String = "/"
+	var ingredient_string: String = delimiter.join(ingredient_list)
 	
 	# check ingredient not empty
-	if ingredient_string.length() <= 49:
+	if ingredient_string.length() <= 97:
 		push_error("No ingredient items")
 		return
 	
