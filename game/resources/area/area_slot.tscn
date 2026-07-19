@@ -1,13 +1,10 @@
 [gd_scene format=3 uid="uid://dcngkhjtt3gm0"]
 
-[ext_resource type="Script" uid="uid://5xxbdqgqsp1b" path="res://game/resources/area/area.gd" id="1_2ac28"]
+[ext_resource type="Script" uid="uid://5xxbdqgqsp1b" path="res://game/resources/area/area_slot.gd" id="1_ncvy6"]
 [ext_resource type="Texture2D" uid="uid://b5onq2i7x1l77" path="res://game/resources/area/brainless_jam_area_lock.png" id="2_40g3k"]
 
 [node name="Area" type="PanelContainer" unique_id=987398511]
-script = ExtResource("1_2ac28")
-resources = null
-locked = null
-time_to_drop = null
+script = ExtResource("1_ncvy6")
 
 [node name="MarginContainer" type="MarginContainer" parent="." unique_id=706210755]
 layout_mode = 2
@@ -77,6 +74,7 @@ layout_mode = 2
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
+disabled = true
 text = "Add"
 
 [node name="RemoveGosling" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer" unique_id=1168277110]

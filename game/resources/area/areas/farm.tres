@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="Area" format=3 uid="uid://cu1bh7vskrpcl"]
+
+[ext_resource type="Script" uid="uid://c6sos7llv4wlj" path="res://game/item/item.gd" id="1_6ydjn"]
+[ext_resource type="Script" uid="uid://cw5a5uu3wjktc" path="res://game/resources/area/drop_chance.gd" id="2_j7pb6"]
+[ext_resource type="Resource" uid="uid://dnw2c4tjih0uf" path="res://game/item/items/fiber.tres" id="3_de6d5"]
+[ext_resource type="Script" uid="uid://bt2c2xucfod4x" path="res://game/resources/area/area.gd" id="3_hfoo3"]
+[ext_resource type="Texture2D" uid="uid://bh4mnxgs8pfuw" path="res://game/resources/area/brainless_jam_areas.png" id="4_j7pb6"]
+
+[sub_resource type="Resource" id="Resource_nhvwg"]
+script = ExtResource("2_j7pb6")
+max_drop = 2
+metadata/_custom_type_script = "uid://cw5a5uu3wjktc"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_de6d5"]
+atlas = ExtResource("4_j7pb6")
+region = Rect2(0, 0, 32, 32)
+
+[resource]
+script = ExtResource("3_hfoo3")
+resources = Dictionary[ExtResource("1_6ydjn"), ExtResource("2_j7pb6")]({
+ExtResource("3_de6d5"): SubResource("Resource_nhvwg")
+})
+texture = SubResource("AtlasTexture_de6d5")
+metadata/_custom_type_script = "uid://bt2c2xucfod4x"

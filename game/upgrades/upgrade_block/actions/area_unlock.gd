@@ -1,7 +1,7 @@
 class_name AreaUnlock
 extends UpgradeAction
 
-@export var area_name: String
+@export var area: Area
 
 func upgrade() -> void:
-	GM.unlock_area.emit(area_name)
+	area.unlock_area()

@@ -1,36 +1,17 @@
 [gd_scene format=3 uid="uid://xge5yncj1mr3"]
 
 [ext_resource type="Script" uid="uid://b8n0shuomaav1" path="res://game/game.gd" id="1_l1rk1"]
-[ext_resource type="Script" uid="uid://c6sos7llv4wlj" path="res://game/item/item.gd" id="2_dxrkv"]
 [ext_resource type="Script" uid="uid://bcwn5ub5t231v" path="res://game/upgrades/upgrades.gd" id="3_3vho3"]
 [ext_resource type="PackedScene" uid="uid://ciynurjikpeqt" path="res://game/upgrades/upgrade_block/UpgradeBlock.tscn" id="4_qf6n1"]
-[ext_resource type="Resource" uid="uid://dnw2c4tjih0uf" path="res://game/item/items/fiber.tres" id="4_u5opy"]
 [ext_resource type="Script" uid="uid://bqbbfw1dwo8hh" path="res://game/crafting/crafting.gd" id="6_dakft"]
 [ext_resource type="Script" uid="uid://x5417vobh6w1" path="res://game/resources/resources.gd" id="7_u5opy"]
+[ext_resource type="Resource" uid="uid://cu1bh7vskrpcl" path="res://game/resources/area/areas/farm.tres" id="8_l8g03"]
 [ext_resource type="Texture2D" uid="uid://ca8dqdmts37vb" path="res://game/sprites/brainless_jam_gosling.png" id="8_y36n6"]
-[ext_resource type="PackedScene" uid="uid://dcngkhjtt3gm0" path="res://game/resources/area/area.tscn" id="9_j8tme"]
-[ext_resource type="Texture2D" uid="uid://bh4mnxgs8pfuw" path="res://game/resources/area/brainless_jam_areas.png" id="10_3vho3"]
-[ext_resource type="Script" uid="uid://cw5a5uu3wjktc" path="res://game/resources/area/drop_chance.gd" id="10_qf6n1"]
-[ext_resource type="Resource" uid="uid://c2il1om33vttt" path="res://game/item/items/stick.tres" id="11_vsp63"]
+[ext_resource type="PackedScene" uid="uid://dcngkhjtt3gm0" path="res://game/resources/area/area_slot.tscn" id="9_j8tme"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_mq0dr"]
 atlas = ExtResource("8_y36n6")
 region = Rect2(0, 0, 16, 16)
-
-[sub_resource type="Resource" id="Resource_j8tme"]
-script = ExtResource("10_qf6n1")
-max_drop = 2
-metadata/_custom_type_script = "uid://cw5a5uu3wjktc"
-
-[sub_resource type="Resource" id="Resource_3vho3"]
-script = ExtResource("10_qf6n1")
-min_drop = 1
-max_drop = 1
-metadata/_custom_type_script = "uid://cw5a5uu3wjktc"
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_y36n6"]
-atlas = ExtResource("10_3vho3")
-region = Rect2(0, 0, 32, 32)
 
 [node name="Game" type="TabContainer" unique_id=1816125175]
 anchors_preset = 15
@@ -38,11 +19,10 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-current_tab = 2
+current_tab = 0
 script = ExtResource("1_l1rk1")
 
 [node name="Crafting" type="Control" parent="." unique_id=1898991696]
-visible = false
 layout_mode = 2
 script = ExtResource("6_dakft")
 metadata/_tab_index = 0
@@ -106,6 +86,7 @@ layout_mode = 2
 metadata/_tab_index = 1
 
 [node name="Upgrades" type="Control" parent="." unique_id=1480121995]
+visible = false
 layout_mode = 2
 script = ExtResource("3_3vho3")
 metadata/_tab_index = 2
@@ -119,7 +100,9 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="SubViewport" type="SubViewport" parent="Upgrades/SubViewportContainer" unique_id=215486210]
+handle_input_locally = false
 size = Vector2i(1152, 617)
+render_target_update_mode = 0
 
 [node name="Upgrade" parent="Upgrades/SubViewportContainer/SubViewport" unique_id=247773113 instance=ExtResource("4_qf6n1")]
 offset_left = 613.0
@@ -176,10 +159,4 @@ size_flags_vertical = 3
 
 [node name="Farm" parent="Resources/MarginContainer/VBoxContainer/AreaContainer" unique_id=987398511 instance=ExtResource("9_j8tme")]
 layout_mode = 2
-resources = Dictionary[ExtResource("2_dxrkv"), ExtResource("10_qf6n1")]({
-ExtResource("4_u5opy"): SubResource("Resource_j8tme"),
-ExtResource("11_vsp63"): SubResource("Resource_3vho3")
-})
-texture = SubResource("AtlasTexture_y36n6")
-locked = false
-time_to_drop = 10.0
+area = ExtResource("8_l8g03")
