@@ -1,9 +1,13 @@
 [gd_scene format=3 uid="uid://dcngkhjtt3gm0"]
 
-[ext_resource type="Script" uid="uid://5xxbdqgqsp1b" path="res://game/resources/area/area_slot.gd" id="1_ncvy6"]
+[ext_resource type="Script" uid="uid://5xxbdqgqsp1b" path="res://game/resources/area/area_slot/area_slot.gd" id="1_ncvy6"]
 [ext_resource type="Texture2D" uid="uid://b5onq2i7x1l77" path="res://game/resources/area/brainless_jam_area_lock.png" id="2_40g3k"]
+[ext_resource type="Texture2D" uid="uid://bhd2q6nvotx8u" path="res://common/images/icons/info/info_icon_normal.tres" id="2_iwp7e"]
+[ext_resource type="Texture2D" uid="uid://c7elg8qsp31ge" path="res://common/images/icons/info/info_icon_pressed.tres" id="3_7lyyv"]
+[ext_resource type="Texture2D" uid="uid://keqywcbtpj1o" path="res://common/images/icons/info/info_icon_hover.tres" id="4_p5qmt"]
+[ext_resource type="Script" uid="uid://ce28lk1r66wbd" path="res://common/scripts/clicky_button_component.gd" id="5_vb0xh"]
 
-[node name="Area" type="PanelContainer" unique_id=987398511]
+[node name="AreaSlot" type="PanelContainer" unique_id=987398511]
 script = ExtResource("1_ncvy6")
 
 [node name="MarginContainer" type="MarginContainer" parent="." unique_id=706210755]
@@ -15,6 +19,41 @@ theme_override_constants/margin_bottom = 10
 
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=916111219]
 layout_mode = 2
+
+[node name="Control2" type="Control" parent="MarginContainer/VBoxContainer" unique_id=888927683]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+size_flags_vertical = 4
+
+[node name="Name" type="Label" parent="MarginContainer/VBoxContainer/Control2" unique_id=1339551123]
+unique_name_in_owner = true
+layout_mode = 0
+offset_top = 4.0
+offset_right = 160.0
+offset_bottom = 27.0
+text = "Name"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="InfoButton" type="TextureButton" parent="MarginContainer/VBoxContainer/Control2" unique_id=1097050470]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -16.0
+offset_top = -8.0
+offset_bottom = 8.0
+grow_horizontal = 0
+grow_vertical = 2
+texture_normal = ExtResource("2_iwp7e")
+texture_pressed = ExtResource("3_7lyyv")
+texture_hover = ExtResource("4_p5qmt")
+
+[node name="ClickyButtonComponent" type="Node" parent="MarginContainer/VBoxContainer/Control2/InfoButton" unique_id=396834131]
+script = ExtResource("5_vb0xh")
+metadata/_custom_type_script = "uid://ce28lk1r66wbd"
 
 [node name="Control" type="Control" parent="MarginContainer/VBoxContainer" unique_id=1916860373]
 custom_minimum_size = Vector2(160, 160)
@@ -84,5 +123,6 @@ size_flags_horizontal = 3
 disabled = true
 text = "Remove"
 
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Control2/InfoButton" to="." method="_on_info_button_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/HBoxContainer/AddGosling" to="." method="_on_add_gosling_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/HBoxContainer/RemoveGosling" to="." method="_on_remove_gosling_pressed"]

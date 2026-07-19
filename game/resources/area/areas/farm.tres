@@ -17,6 +17,7 @@ region = Rect2(0, 0, 32, 32)
 
 [resource]
 script = ExtResource("3_hfoo3")
+name = "Farm"
 resources = Dictionary[ExtResource("1_6ydjn"), ExtResource("2_j7pb6")]({
 ExtResource("3_de6d5"): SubResource("Resource_nhvwg")
 })

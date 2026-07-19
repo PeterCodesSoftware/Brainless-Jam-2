@@ -18,6 +18,7 @@ var is_drop_bar_active: bool = false
 func _ready() -> void:
 	area.unlock.connect(unlock)
 	%AreaIMG.texture = area.texture
+	%Name.text = area.name
 
 func _process(delta: float) -> void:
 	if not is_drop_bar_active:
@@ -75,3 +76,7 @@ func stop_progress_bar() -> void:
 
 func remove_last_child(node: Node) -> void:
 	node.remove_child(node.get_child(node.get_child_count() - 1))
+
+
+func _on_info_button_pressed() -> void:
+	push_warning("NOT IMPLEMENTED YET")

@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://w6u1nasagkn6"]
+
+[ext_resource type="Script" uid="uid://8m166xywhplh" path="res://game/resources/area/area_display/area_display.gd" id="1_77ebg"]
+
+[node name="AreaDisplay" type="PanelContainer" unique_id=1971839860]
+script = ExtResource("1_77ebg")

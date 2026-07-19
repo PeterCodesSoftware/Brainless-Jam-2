@@ -7,7 +7,7 @@
 [ext_resource type="Script" uid="uid://x5417vobh6w1" path="res://game/resources/resources.gd" id="7_u5opy"]
 [ext_resource type="Resource" uid="uid://cu1bh7vskrpcl" path="res://game/resources/area/areas/farm.tres" id="8_l8g03"]
 [ext_resource type="Texture2D" uid="uid://ca8dqdmts37vb" path="res://game/sprites/brainless_jam_gosling.png" id="8_y36n6"]
-[ext_resource type="PackedScene" uid="uid://dcngkhjtt3gm0" path="res://game/resources/area/area_slot.tscn" id="9_j8tme"]
+[ext_resource type="PackedScene" uid="uid://dcngkhjtt3gm0" path="res://game/resources/area/area_slot/area_slot.tscn" id="9_j8tme"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_mq0dr"]
 atlas = ExtResource("8_y36n6")

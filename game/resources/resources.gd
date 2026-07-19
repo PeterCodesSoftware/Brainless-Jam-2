@@ -1,5 +1,7 @@
 extends Control
 
+const AREA_SLOT = preload("uid://dcngkhjtt3gm0")
+
 @onready var available_goslings_label: Label = %AvailableGoslingsLabel
 
 func _ready() -> void:
