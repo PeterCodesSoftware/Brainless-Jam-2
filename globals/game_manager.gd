@@ -2,6 +2,9 @@ extends Node
 
 var inventory: Dictionary[Item, int] = {}
 
+@warning_ignore("unused_signal")
+signal display_popup(node: Node)
+
 signal goslings_available_changed
 signal update_item_slot(item: Item)
 signal create_item_slot(item: Item)

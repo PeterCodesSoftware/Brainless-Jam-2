@@ -1,12 +1,10 @@
 [gd_scene format=3 uid="uid://i3f4wvclsod3"]
 
 [ext_resource type="Script" uid="uid://dlppvy5omae18" path="res://game/upgrades/upgrade_block/craft_display/craft_display.gd" id="1_2rmrs"]
-[ext_resource type="Resource" uid="uid://bg780eidkd76n" path="res://game/crafting/craft/crafts/frog_legs.tres" id="2_bnsec"]
 [ext_resource type="Texture2D" uid="uid://c5eo5re1m5njb" path="res://game/upgrades/upgrade_block/craft_display/bad_grid.png" id="3_bnsec"]
 
 [node name="CraftDisplay" type="PanelContainer" unique_id=1608885935]
 script = ExtResource("1_2rmrs")
-craft = ExtResource("2_bnsec")
 
 [node name="GridContainer" type="GridContainer" parent="." unique_id=359464302]
 layout_mode = 2

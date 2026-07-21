@@ -1,24 +1,30 @@
+class_name AreaSlot
 extends PanelContainer
 
 const GOSLING_IMG = preload("uid://3noa1gmpsx54")
+const AREA_DISPLAY = preload("uid://w6u1nasagkn6")
 
 @onready var gosling_container: GridContainer = %GoslingContainer
 @onready var add_gosling: Button = %AddGosling
 @onready var remove_gosling: Button = %RemoveGosling
 @onready var drop_bar: ProgressBar = %DropBar
 
-@export var area: Area
+var area: Area
 
-var locked: bool = false
+var locked: bool = true
 
 const max_goslings: int = 9
 var working_goslings: int = 0
 var is_drop_bar_active: bool = false
 
+signal display_area_info(node: Node)
+
 func _ready() -> void:
 	area.unlock.connect(unlock)
 	%AreaIMG.texture = area.texture
 	%Name.text = area.name
+	
+	unlock()
 
 func _process(delta: float) -> void:
 	if not is_drop_bar_active:
@@ -79,4 +85,6 @@ func remove_last_child(node: Node) -> void:
 
 
 func _on_info_button_pressed() -> void:
+	var area_display: AreaDisplay = AREA_DISPLAY.instantiate()
 	push_warning("NOT IMPLEMENTED YET")
+	display_area_info.emit()

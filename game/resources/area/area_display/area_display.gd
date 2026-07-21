@@ -1,5 +1,7 @@
+class_name AreaDisplay
 extends PanelContainer
 
 var area: Area
 
-pass
+func _ready() -> void:
+	pass

@@ -4,11 +4,18 @@
 [ext_resource type="Script" uid="uid://cw5a5uu3wjktc" path="res://game/resources/area/drop_chance.gd" id="2_j7pb6"]
 [ext_resource type="Resource" uid="uid://dnw2c4tjih0uf" path="res://game/item/items/fiber.tres" id="3_de6d5"]
 [ext_resource type="Script" uid="uid://bt2c2xucfod4x" path="res://game/resources/area/area.gd" id="3_hfoo3"]
+[ext_resource type="Resource" uid="uid://c2il1om33vttt" path="res://game/item/items/stick.tres" id="4_de6d5"]
 [ext_resource type="Texture2D" uid="uid://bh4mnxgs8pfuw" path="res://game/resources/area/brainless_jam_areas.png" id="4_j7pb6"]
 
 [sub_resource type="Resource" id="Resource_nhvwg"]
 script = ExtResource("2_j7pb6")
 max_drop = 2
+metadata/_custom_type_script = "uid://cw5a5uu3wjktc"
+
+[sub_resource type="Resource" id="Resource_y36n6"]
+script = ExtResource("2_j7pb6")
+min_drop = 5
+max_drop = 10
 metadata/_custom_type_script = "uid://cw5a5uu3wjktc"
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_de6d5"]
@@ -19,7 +26,9 @@ region = Rect2(0, 0, 32, 32)
 script = ExtResource("3_hfoo3")
 name = "Farm"
 resources = Dictionary[ExtResource("1_6ydjn"), ExtResource("2_j7pb6")]({
-ExtResource("3_de6d5"): SubResource("Resource_nhvwg")
+ExtResource("3_de6d5"): SubResource("Resource_nhvwg"),
+ExtResource("4_de6d5"): SubResource("Resource_y36n6")
 })
 texture = SubResource("AtlasTexture_de6d5")
+time_to_drop = 2.0
 metadata/_custom_type_script = "uid://bt2c2xucfod4x"

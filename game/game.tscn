@@ -2,12 +2,10 @@
 
 [ext_resource type="Script" uid="uid://b8n0shuomaav1" path="res://game/game.gd" id="1_l1rk1"]
 [ext_resource type="Script" uid="uid://bcwn5ub5t231v" path="res://game/upgrades/upgrades.gd" id="3_3vho3"]
-[ext_resource type="PackedScene" uid="uid://ciynurjikpeqt" path="res://game/upgrades/upgrade_block/UpgradeBlock.tscn" id="4_qf6n1"]
+[ext_resource type="PackedScene" uid="uid://ciynurjikpeqt" path="res://game/upgrades/upgrade_block/upgrade_block.tscn" id="4_qf6n1"]
 [ext_resource type="Script" uid="uid://bqbbfw1dwo8hh" path="res://game/crafting/crafting.gd" id="6_dakft"]
 [ext_resource type="Script" uid="uid://x5417vobh6w1" path="res://game/resources/resources.gd" id="7_u5opy"]
-[ext_resource type="Resource" uid="uid://cu1bh7vskrpcl" path="res://game/resources/area/areas/farm.tres" id="8_l8g03"]
 [ext_resource type="Texture2D" uid="uid://ca8dqdmts37vb" path="res://game/sprites/brainless_jam_gosling.png" id="8_y36n6"]
-[ext_resource type="PackedScene" uid="uid://dcngkhjtt3gm0" path="res://game/resources/area/area_slot/area_slot.tscn" id="9_j8tme"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_mq0dr"]
 atlas = ExtResource("8_y36n6")
@@ -154,9 +152,8 @@ layout_mode = 2
 text = "1 gosling ready to work"
 
 [node name="AreaContainer" type="GridContainer" parent="Resources/MarginContainer/VBoxContainer" unique_id=1403643905]
+unique_name_in_owner = true
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="Farm" parent="Resources/MarginContainer/VBoxContainer/AreaContainer" unique_id=987398511 instance=ExtResource("9_j8tme")]
-layout_mode = 2
-area = ExtResource("8_l8g03")
+[node name="PopupLayer" type="CanvasLayer" parent="." unique_id=2059497740]
