@@ -1,4 +1,4 @@
-extends TabContainer
+extends Node
 
 @onready var popup_layer: CanvasLayer = $PopupLayer
 
