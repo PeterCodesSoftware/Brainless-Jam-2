@@ -58,4 +58,4 @@ func _on_buy_pressed() -> void:
 func _draw() -> void:
 	for dependency_path: NodePath in dependency_paths:
 		var dependecy: Control = get_node(dependency_path)
-		draw_line(global_position, dependecy.global_position, Color.WHITE)
+		draw_line(size / 2, dependecy.global_position + dependecy.size / 2 - global_position, Color.WHITE)

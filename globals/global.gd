@@ -14,3 +14,6 @@ func _ready() -> void:
 	AudioServer.set_bus_volume_linear(AudioServer.get_bus_index("Music"), options.music_volume)
 	Engine.max_fps = options.fps
 	Engine.physics_ticks_per_second = options.fps
+
+func get_control_center(control: Control) -> Vector2:
+	return control.global_position + control.size / 2
