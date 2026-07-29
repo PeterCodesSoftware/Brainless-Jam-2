@@ -23,8 +23,6 @@ func _ready() -> void:
 	area.unlock.connect(unlock)
 	%AreaIMG.texture = area.texture
 	%Name.text = area.name
-	
-	unlock()
 
 func _process(delta: float) -> void:
 	if not is_drop_bar_active:
